@@ -1,0 +1,19 @@
+{
+  "name": "m20-challenge",
+  "version": "1.0.0",
+  "description": "React Portafolio Daniel Perez Garnica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-PeGa/M20-Challenge.git"
+  },
+  "author": "Daniel Perez Garnica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel-PeGa/M20-Challenge/issues"
+  },
+  "homepage": "https://github.com/Daniel-PeGa/M20-Challenge#readme"
+}
