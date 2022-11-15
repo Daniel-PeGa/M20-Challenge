@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { validateEmail } from '../utils/helpers';
-required('dotenv').config()
+require('dotenv').config()
 
 function Contact() {
     const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_ID);
@@ -15,7 +15,7 @@ function Contact() {
 
     const handleChange = (e) => {
         if (e.target.name === 'email') {
-            cosnt isValid = validateEmail(e.target.value);
+            const isValid = validateEmail(e.target.value);
             if (!isValid) {
                 setErrorMessage('Is this really ur email??');
             } else {
