@@ -13,6 +13,16 @@ function Contact() {
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
 
+    if (state.succeeded) {
+        return (
+          <div>
+            <p>Thanks for reaching out!</p>
+            <button className="button is-medium is-primary is-half m-6" onClick={()=> window.open("/#contact")}>Back to About</button>
+          </div>
+        );
+    }
+    
+
     const handleChange = (e) => {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
