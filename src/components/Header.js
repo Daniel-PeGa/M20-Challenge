@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navigation from '/Navigation';
+import Navigation from './Navigation';
 import About from './About';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
@@ -27,9 +27,9 @@ function Header() {
     return (
         <div>
             <nav>
-                <a>
+                <div>
                     <h1>Daniel Perez Garnica</h1>
-                </a>
+                </div>
             </nav>
             <Navigation
             currentPage={currentPage}
